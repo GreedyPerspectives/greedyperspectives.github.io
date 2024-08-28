@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel = "icon" href = "assets/title_image.png" type = "image/x-icon">
+        
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Greedy Perspectives: Multi-Drone View Planning for Collaborative Perception in Cluttered Environments">
+  <meta name="keywords" content="multi-agent planning, rendering, coverage, greedy algorithms">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="assets/Thumbnail.png" />        
+  <title>Greedy Perspectives: Multi-Drone View Planning for Collaborative Perception in Cluttered Environments</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">Greedy Perspectives: Multi-Drone View Planning for Collaborative Perception in Cluttered Environments</h1>
+          <h2 class="title is-6 publlication-title">IROS 2024</h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.krishnasuresh.org/">Krishna Suresh</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://adityarauniyar.com/">Aditya Rauniyar</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.micahcorah.com/">Micah Corah</a><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/">Sebastian Scherer</a><sup>2</sup>,</span>
+          </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block">
+              <a href="https://www.olin.edu/" style="color: rgb(179, 8, 8);">Olin College</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.cmu.edu/" style="color: rgb(179, 8, 8);">Carnegie Mellon University</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.mines.edu/" style="color: rgb(179, 8, 8);">Colorado School of Mines</a><sup>3</sup>
+            </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="assets/GreedyPrespectives.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- arXiv Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2310.10863"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- GitHub Link. -->
+              <span class="link-block">
+                <a href="https://github.com/GreedyPerspectives/GreedyPerspectives"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <!-- Raw Data Link. -->
+              <span class="link-block">
+                <a href="https://drive.google.com/drive/folders/17t4n21h1UMrff4AWlkIF-tq8GW8zKNA5"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-database"></i>
+                  </span>
+                  <span>Raw Data</span>
+                </a>
+              </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" src="./assets/system.png" alt="Greedy Perspectives: Multi-Drone View Planning" style="height: 100%; width: 100%; object-fit: cover;">
+      <h2 class="subtitle has-text-centered">
+        Multi-Agent Planning algorithm that generates waypoints for Drone Fleet to maximize coverage over dynamic targets.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-big">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-shelves">
+          <img id="shelves" src="./assets/scenarios/corridor_seq.gif" alt="Corridor GIF" style="height: 150%; width: 150%; object-fit: cover;">
+          <p class="has-text-centered">Corridor</p>
+        </div>
+        <div class="item item-binpick">
+          <img id="binpick" src="./assets/scenarios/forest_nocol.gif" alt="Forest GIF" style="height: 150%; width: 150%; object-fit: cover;">
+          <p class="has-text-centered">Forest</p>
+        </div>
+        <div class="item item-ten">
+          <img id="ten" src="./assets/scenarios/large_seq.gif" alt="Large GIF" style="height: 150%; width: 150%; object-fit: cover;">
+          <p class="has-text-centered">Large</p>
+        </div>
+        <div class="item item-eight">
+          <img id="eight" src="./assets/scenarios/merge_seq.gif" alt="Merge GIF" style="height: 150%; width: 150%; object-fit: cover;">
+          <p class="has-text-centered">Merge</p>
+        </div>
+        <div class="item item-six">
+          <img id="six" src="./assets/scenarios/split_seq.gif" alt="Split GIF" style="height: 150%; width: 150%; object-fit: cover;">
+          <p class="has-text-centered">Split</p>
+        </div>
+      </div>
+      <h3 class="subtitle has-text-centered">
+        Scenarios with Multiple Cameras Filming Multiple Targets in Different Environmental Conditions
+      </h3>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Deployment of teams of aerial robots could enable large-scale filming of dynamic groups of people (actors) in complex environments for applications in areas such as team sports and cinematography. Toward this end, methods for submodular maximization via sequential greedy planning can be used for scalable optimization of camera views across teams of robots but face challenges with efficient coordination in cluttered environments. Obstacles can produce occlusions and increase chances of inter-robot collision which can violate requirements for near-optimality guarantees. To coordinate teams of aerial robots in filming groups of people in dense environments, a more general view-planning approach is required. We explore how collision and occlusion impact performance in filming applications through the development of a multi-robot multi-actor view planner with an occlusion-aware objective for filming groups of people and compare with a formation planner and a greedy planner that ignores inter-robot collisions. We evaluate our approach based on five test environments and complex multi-actor behaviors. Compared with a formation planner, our sequential planner generates 14% greater view reward over the actors for three scenarios and comparable performance to formation planning on two others. We also observe near identical view rewards for sequential planning both with and without inter-robot collision constraints which indicates that robots are able to avoid collisions without impairing performance in the perception task. Overall, we demonstrate effective coordination of teams of aerial robots for filming groups that may split, merge, or spread apart and in environments cluttered with obstacles that may cause collisions or occlusions.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Experimentation. -->
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Greedy Perspectives: Performance</h2>
+    
+        <div class="content has-text-justified">
+          <p>
+            The planner's performance in each scenario is analyzed based on view rewards for formation and sequential planning, both with and without inter-robot collision constraints. We use drones with camera intrinsic parameters of 2500px focal length, 4000px image width, and 3000px image height. All drones are positioned 5 meters high with a 10-degree camera tilt from the horizon.
+          </p>
+        </div>
+    
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            <img src="./assets/actor_coverage.png"
+                 class="eight-shelves-confusion-image"
+                 alt="Actor Coverage: UAV Camera Model and Example OpenGL Rendering"
+                 style="max-width: 100%; height: auto;"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--/ Experimentation. -->
+
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <div class="content">
+          <h3 class="subtitle is-4">Normalized View Reward: Sequential vs. Formation Planners</h3>
+        </div>
+      </div>
+      <div class="column is-half">
+        <img src="./assets/exp/seq_results.png"
+             class="eight-shelves-confusion-image"
+             alt="Comparison of Sequential and Formation Planners: Normalized View Reward Analysis Across Various Scenarios"/>
+      </div>
+    </div>
+    
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <div class="content">
+          <h3 class="subtitle is-4">Time and Reward with Scaling Robot Numbers in the Large Scenario</h3>
+        </div>
+      </div>
+      <div class="column is-half">
+        <img src="./assets/exp/scale.png"
+             class="eight-shelves-confusion-image"
+             alt="Time and Reward Analysis with Varying Robot Numbers in the Large Test Case"/>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">BibTeX</h2>
+      <pre><code>
+        @article{suresh2024greedy,
+            title={Greedy Perspectives: Multi-Drone View Planning for Collaborative Perception in Cluttered Environments},
+            author={Suresh, Krishna and Rauniyar, Aditya and Corah, Micah and Scherer, Sebastian},
+            journal={IROS 2024},
+            year={2024},
+            publisher={IEEE}
+        }
+      </code></pre>
+    </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+        <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website adapted from the Nerfies templates, which is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            If you use the <a href="https://github.com/GreedyPerspectives/GreedyPrespectives.github.io">source code</a> of this website,
+            please also link back to the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies source code</a> in your footer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
