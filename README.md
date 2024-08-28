@@ -1,6 +1,6 @@
 # Greedy Perspectives: Multi-Drone View Planning for Collaborative Perception in Cluttered Environments
 
-This is the repository that contains the source code for our paper website [_Greedy Perspectives: Multi-Drone View Planning for Collaborative Perception in Cluttered Environments_](https://GreedyPrespectives.github.io/).
+This is the repository that contains the source code for our paper website [_Greedy Perspectives: Multi-Drone View Planning for Collaborative Perception in Cluttered Environments_](https://greedyperspectives.github.io/).
 It has been adapted from the [Nerfies website](https://nerfies.github.io).
 
 
